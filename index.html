@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="default.css">
+    <link href="https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Resume</title>
 </head>
@@ -31,7 +32,7 @@
         </section>  
     </main>
     <!-- ---------content------- -->
-    <article id="aboutinfo">
+    <div id="aboutinfo">
         <div class="about" >
             <h3>ABOUT ME </h3>
             <p class="abouttxt"> I am a self-taught UI and Graphic designer based in Bengaluru.
@@ -50,47 +51,49 @@
         <div class="basicinfo">
             <h3>BASIC INFORMATION</h3>
            <div class="infoflex">
-               <div class="age"><h6>AGE:</h6> <p>28 </p> </div>
                <div class="email"><h6>EMAIL:</h6>   <p>seemasam2113@gmail.com</p></div>
-               <div class="phone"><h6>PHONE:</h6>   <p>+91 9740703592</p> </div>
-               <div class="language">  <h6>EDUCATION:</h6>   <p>B. Sc in Fashion Design</p></div>
-               <div class="address"><h6>ADDRESS:</h6>    <p>#80/16, 1st block, rajajinagar, B-lore</p></div>
+               <div class="phone"><h6>PHONE:</h6>   <p>+919740703592</p> </div>
+               <div class="language">  <h6>EDUCATION:</h6>   <p>Bachelor Of Science In Fashion Design</p></div>
+               <div class="age"><h6>AGE:</h6> <p>28 </p> </div>
+               <div class="address"><h6>ADDRESS:</h6>    <p>#80/16, 1st block, Rajajinagar, Bangalore, India</p></div>
                <div class="language">  <h6>LANGUAGE:</h6>   <p>Hindi, English, Kannada</p> </div>
                <div class="social"> <h6>SOCIAL MEDIA:</h6> <div> <a href="https://www.instagram.com/seemasam2113/"  target="_blank">
-                <img src="imgs/insta.png" alt="" height="40px"></a>
+                <img class="socialMediaIcon" src="imgs/insta.png" alt="" height="40px"></a>
             <a href="https://www.behance.net/epifeni"  target="_blank">
-                    <img src="imgs/be.png" alt="" height="40px" > </a></div>
+                    <img class="socialMediaIcon" src="imgs/be.png" alt="" height="40px" > </a></div>
             </div>
                    
         </div>
-    </article>
-
-    <section id="profskills">
-        <h3>PROFFESSIONAL SKILLS</h3>
-        <div class="professionaldiv">
-            <aside class="skillname">
-                <h6>PHOTSHOP:</h6>
-                <div class="bar1"></div>
-                <h6>ILLUSTRATOR:</h6>
-                <div class="bar2"></div>
-                <h6>HTML:</h6>
-                <div class="bar3"></div>
-                <h6>CSS:</h6>
-                <div class="bar4"></div>
-                <h6>WordPress:</h6>
-                <div class="bar5"></div>
-            </aside>
-            <aside class="percentage">
-                <p>80%</p>
-                <p>60%</p>
-                <p>70%</p>
-                <p>60%</p>
-                <p>40%</p>
-            </aside>
         </div>
-    </section>
-    <!-- -----------------GALLERY---------------- -->
-    <div id="gallery">
+    </div>
+
+    <div id="animateMe">
+        <div id="profskills">
+            <h3>PROFFESSIONAL SKILLS</h3>
+            <div class="professionaldiv">
+                <div class="skillname">
+                    <h6>Photoshop:</h6>
+                    <div class="bar animateSkills80"></div>
+                    <h6>Illustrator:</h6>
+                    <div class="bar animateSkills60"></div>
+                    <h6>Html:</h6>
+                    <div class="bar animateSkills70"></div>
+                    <h6>Css:</h6>
+                    <div class="bar animateSkills60"></div>
+                    <h6>WordPress:</h6>
+                    <div class="bar animateSkills40"></div>
+                </div>
+                <div class="percentage">
+                    <p>80%</p>
+                    <p>60%</p>
+                    <p>70%</p>
+                    <p>60%</p>
+                    <p>40%</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="gallery">
             <h3>UI Design</h3>
             <h4>Phone Themes and Game design</h4>
         <section class="uidesign">
@@ -139,7 +142,7 @@
                 <div class="l3"><img src="imgs/logo3.jpg" alt="" style="width:100%"> </div>
             </div>
         </section>
-        <h4>Charecter and Comic Design</h4>
+        <h4>Character and Comic Design</h4>
         <section class="ccd">
             <div class="cd1">
                 <div class="c1"><img src="imgs/alldays280.png" alt="" style="width:100%"> </div>
@@ -153,6 +156,11 @@
         </section>
     </div>
 
+    </div>
+    
+    <!-- -----------------GALLERY---------------- -->
+   
+
     <!-- ----------------   WORK --------------- -->
     <div id="workexp">
         <h3> WORK EXPERIENCE</h3>
@@ -162,7 +170,7 @@
                 <h4>Fashion Design</h4>
                  
             </aside>
-            <aside class="exp1info"><p> <b><i>Ayyari Design Studio</i></b> <br><br>
+            <aside class="exp1info"><p> <b>Ayyari Design Studio</b> <br><br>
                 <b>Keyroles:</b> <br>
                  Creating, designing, marketing 
                 and branding Ultra-Modern and Chic Designer Saris and Ladies Ethnic Wear. <br><br>
