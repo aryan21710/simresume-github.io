@@ -1,0 +1,22 @@
+@media only screen and (min-width: 768px) and (max-width: 900px) {
+    #aboutinfo {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      border: 1px solid blue;
+    }
+    .workexp1,
+    .workexp2,
+    .workexp3 {
+      width: 90vw;
+      margin: 0.55rem;
+    }
+    .bunny,
+    .junoon,
+    .mathsg {
+      display: grid;
+      grid-template-columns: repeat(3, 0.3fr);
+      margin-top: 60px;
+    }
+  }
+  

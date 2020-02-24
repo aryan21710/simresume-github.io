@@ -46,7 +46,7 @@ a {
 .mandala img {
   height: 100vh;
   object-fit: default;
-  /* animation: rotateHomeImg 1200s infinite ease; */
+  animation: rotateHomeImg 1200s infinite ease;
   border-radius: 50%;
 }
 
@@ -500,24 +500,4 @@ footer {
   background: var(--pink);
   transform: rotate(10deg);
 }
-
-/* -------------------media--------------------- */
-@media (max-width: 1024px) {
-  .menu {
-    display: none;
-  }
-  .mainsection {
-    display: grid;
-    grid-template-rows: 0.5fr 1fr;
-    grid-template-columns: 1fr;
-  }
-  .graphicdesign {
-    grid-gap: 0px;
-  }
-  #hire {
-    width: 100px;
-  }
-}
-
-
 
