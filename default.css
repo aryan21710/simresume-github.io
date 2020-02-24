@@ -22,27 +22,48 @@ body,
 }
 /* --------home page mandala image ---------- */
 a {
-  color: white;
-  /* text-decoration: none; */
+  color: black;
+  text-decoration: none;
 }
 .mainsection {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 30vw 70vw;
   width: 100%;
   height: 100vh;
 }
 
 .mandala {
-  background: url("imgs/babymandala.jpg") no-repeat;
-  background-size: cover;
-  background-position: center;
   /* height: auto; */
+  position: relative;
+}
+
+.mandalaImg {
+  position: absolute;
+  top: 0vh;
+  right: 15%;
+}
+
+.mandala img {
+  height: 100vh;
+  object-fit: default;
+  animation: rotateHomeImg 1200s infinite ease;
+  border-radius: 50%;
+}
+
+@keyframes rotateHomeImg {
+  0% {
+  }
+
+  100% {
+    transform: rotateZ(3600deg);
+  }
 }
 
 #navbar {
-  width: 100%;
   padding: 15px;
   position: absolute;
+  z-index: 1000;
+  right: 15%;
 }
 /* ----------- list items menu----------- */
 .menu {
@@ -50,6 +71,8 @@ a {
   float: right;
   font-family: "Odibee Sans";
   letter-spacing: 2px;
+  width: 50vw;
+  justify-content: space-between;
 }
 .creative {
   margin-left: 10px;
@@ -67,7 +90,7 @@ a {
 button:hover {
   background-color: var(--pink);
 }
-li {
+.menu li {
   font-size: 18px;
   border-radius: 10px;
   font-family: "Odibee Sans";
@@ -75,11 +98,24 @@ li {
   list-style-type: none;
   font-weight: bold;
   padding: 10px 15px;
-  background-color: var(--hover-color);
-  margin: 0 15px 0 0;
-}
-li:hover {
   background-color: var(--pink);
+  width: 8vw;
+  height: 4vh;
+  text-align: center;
+  transition: height 0.7s ease-in-out;
+}
+.menu li:hover {
+  height: 6vh;
+}
+
+.menu li:hover > a {
+  color: white;
+}
+
+.menu li a {
+  color: black;
+  text-decoration: none;
+  text-align: center;
 }
 
 /* --------image and intro part-------- */
@@ -91,7 +127,7 @@ li:hover {
   width: auto;
   text-align: center;
   font-family: "Odibee Sans";
-  color: white;
+  color: black;
 }
 
 h1 {
@@ -105,22 +141,26 @@ h4 {
   font-family: "Odibee Sans";
   letter-spacing: 2px;
 }
+.introcard h4 {
+  margin-bottom: 0vh;
+}
 #hire {
   width: 25%;
   padding: 10px;
   border: none;
   border-radius: 8px;
   outline: none;
-  background-color: var(--hover-color);
+  background-color: var(--pink);
   font-size: 20px;
   font-weight: bold;
-  color: white;
+  color: black;
   letter-spacing: 2px;
-
+  text-decoration: none;
   margin-top: 10px;
+  cursor: pointer;
 }
-#hire:hover {
-  background-color: var(--pink);
+#hire:hover > a {
+  color: white;
 }
 /* -------------CONTENT-------------- */
 
@@ -155,12 +195,11 @@ h4 {
 
 p {
   font-size: 20px;
-  font-family: 'Comfortaa';
-
+  font-family: "Comfortaa";
 }
 .abouttxt {
   line-height: 30px;
-  font-family: 'Comfortaa';
+  font-family: "Comfortaa";
 }
 h3 {
   color: white;
@@ -174,50 +213,42 @@ h6 {
   font-family: "Comfortaa";
 }
 
-
-#animateMe:hover > #profskills > .professionaldiv > .skillname > .animateSkills80 {
-    animation: animateSkills80 4s 1 ease-in-out forwards;
-
-}
-
-#animateMe:hover > #profskills > .professionaldiv > .skillname > .animateSkills70 {
-    animation: animateSkills70 4s 1 ease-in-out forwards;
-
-}
-
-
-#animateMe:hover > #profskills > .professionaldiv > .skillname > .animateSkills60 {
-    animation: animateSkills60 4s 1 ease-in-out forwards;
-
-}
-
-
-#animateMe:hover > #profskills > .professionaldiv > .skillname > .animateSkills40 {
-    animation: animateSkills40 4s 1 ease-in-out forwards;
-
-}
-
-
-
-
-.skillname:hover > .animateSkills80 {
+#animateMe:hover
+  > #profskills
+  > .professionaldiv
+  > .skillname
+  > .animateSkills80 {
   animation: animateSkills80 4s 1 ease-in-out forwards;
 }
 
-.skillname:hover > .animateSkills60 {
-  animation: animateSkills60 4s 1  ease-in-out forwards;
+#animateMe:hover
+  > #profskills
+  > .professionaldiv
+  > .skillname
+  > .animateSkills70 {
+  animation: animateSkills70 4s 1 ease-in-out forwards;
 }
 
-.skillname:hover > .animateSkills70 {
-  animation: animateSkills70 4s 1  ease-in-out forwards;
+#animateMe:hover
+  > #profskills
+  > .professionaldiv
+  > .skillname
+  > .animateSkills60 {
+  animation: animateSkills60 4s 1 ease-in-out forwards;
 }
 
-.skillname:hover > .animateSkills40 {
-  animation: animateSkills40 4s 1  ease-in-out forwards;
+#animateMe:hover
+  > #profskills
+  > .professionaldiv
+  > .skillname
+  > .animateSkills40 {
+  animation: animateSkills40 4s 1 ease-in-out forwards;
 }
+
+
 
 .bar {
-  background-color: white;
+  background-color: var(--bg-color);
   height: 10px;
   display: block;
   width: 0px;
@@ -278,31 +309,16 @@ h6 {
   display: grid;
   grid-template-columns: 1fr auto;
 }
-.bar2,
-.bar3,
-.bar4,
-.bar5 {
-  background-color: white;
-  height: 10px;
-  margin-bottom: 10px;
-}
+
 .percentage p {
   font-size: 20px;
   margin: 27px;
   font-weight: bold;
+  color: black;
 }
 
-.bar2 {
-  width: 60%;
-}
-.bar3 {
-  width: 70%;
-}
-.bar4 {
-  width: 60%;
-}
-.bar5 {
-  width: 40%;
+.skillname h6 {
+  color: black;
 }
 
 /* -------------GALLERY -------------- */
@@ -311,6 +327,7 @@ h6 {
   font-family: "Odibee Sans";
   text-align: center;
   margin: 2rem 0.8rem 0.8rem 0.8rem;
+  cursor: pointer;
 }
 
 .uidesign {
@@ -321,6 +338,7 @@ h6 {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   margin-bottom: 80px;
+  background-color: var(--pink);
 }
 .bunny,
 .junoon,
@@ -385,6 +403,8 @@ h6 {
   box-shadow: 0px 0px 10px;
   border: 1px solid white;
   margin-bottom: 1.5em;
+  background-color: var(--pink);
+
 }
 
 /* ---------------------WORK EXPERIENCE------------------- */
@@ -403,7 +423,7 @@ h6 {
   border: 1px solid white;
   margin: 0.7rem;
   box-shadow: 0px 0px 10px;
-  font-family: 'Comfortaa';
+  font-family: "Comfortaa";
 }
 .exp1,
 .exp2info,
@@ -411,19 +431,17 @@ h6 {
   background-color: var(--pink);
   padding: 0.6rem;
   color: white;
-
 }
 .exp1info,
 .exp2,
 .exp3info {
   padding: 0.4rem;
   background-color: white;
-
 }
 
-.exp1info p , .exp2info p {
-    font-family: 'Comfortaa';
-
+.exp1info p,
+.exp2info p {
+  font-family: "Comfortaa";
 }
 .logotext {
   font-size: 25px;
@@ -732,7 +750,7 @@ footer {
     border: none;
     border-radius: 8px;
     outline: none;
-    background-color: var(--hover-color);
+    background-color: var(--pink);
     font-weight: bold;
     color: white;
     margin-top: 10px;
