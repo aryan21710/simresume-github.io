@@ -69,6 +69,10 @@
      
     }
 
+    .logotext {
+      font-size: 20px;
+    }
+
     .bar {
       background-color: var(--bg-color);
       height: 10px;
@@ -79,6 +83,7 @@
     .bar80 {
       width: 80%;
     }
+
 
     .bar70 {
       width: 70%;
@@ -195,6 +200,16 @@
       background-color: var(--bg-color);
 
     }
+
+    .contactflex h6 {
+      display: inline-block;
+      margin: 0px;
+    }
+
+    .contactflex p {
+      margin-bottom: 20px;
+    }
+
     .name2,
     .email2,
     .phone2,
@@ -290,7 +305,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 20vh;
+      height: 10vh;
     }
     .topbutton button {
       background-color: var(--pink);
