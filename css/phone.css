@@ -16,6 +16,10 @@
 
     }
 
+    .infoflex {
+      padding: 0px;
+    }
+
     .abouttxt {
       text-align: justify;
       margin-top: 15px;
@@ -33,9 +37,12 @@
       display: flex;
       justify-content: center;
       align-items: center;
+    }
 
-
-
+    .skillgrid {
+      display: grid;
+      grid-template-columns: 0.99fr 0.01fr;
+      grid-template-rows: repeat(8, 6vh);
     }
 
     #hire {
@@ -46,6 +53,10 @@
       box-shadow: 0px;
       width: 100vw;
       margin: 0px;
+    }
+
+    #profskills {
+      height: 90vh;
     }
 
     .exp1info, .exp2info, .exp3info{
@@ -83,11 +94,22 @@
       background-color: var(--bg-color);
       height: 10px;
       display: block;
-      margin-bottom: 10px;
+      margin-bottom: 3vh;
+      height: 15px;
+      font-size: 15px;
+      opacity: 1;
+      display: flex;
+  justify-content: flex-end;
+
+
     }
 
     .bar80 {
       width: 80%;
+    }
+
+    .bar90 {
+      width: 90%;
     }
 
 
@@ -141,7 +163,8 @@
     }
 
    .infoflex div, .infoflex h6 {
-    display: inline;
+    display: inline-block;
+    padding: 0px;
    }
 
    .uidesign {
@@ -229,7 +252,8 @@
     .phone,
     .address,
     .language,
-    .social {
+    .social,
+    .portfolio {
       line-height: 15px;
     }
 
@@ -249,7 +273,11 @@
       padding: 0px;
     }
 
-    .social h6 {
+    .percentage p {
+      margin: 4vh 0 8vh 0;
+    }
+
+    .social h6,.portfolio h6 {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;

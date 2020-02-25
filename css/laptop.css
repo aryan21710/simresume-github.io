@@ -186,7 +186,8 @@ h4 {
 .phone,
 .address,
 .language,
-.social {
+.social,
+.portfolio {
   display: grid;
   grid-template-columns: 0.5fr 1fr;
   line-height: 45px;
@@ -282,87 +283,185 @@ h6 {
   font-family: "Comfortaa";
 }
 
+.skillgrid {
+  display: grid;
+  grid-template-columns: 0.9fr 0.1fr;
+  grid-template-rows: repeat(8, 6vh);
+}
+
 #animateMe:hover
   > #profskills
   > .professionaldiv
+  > .skillgrid
   > .skillname
   > .animateSkills80 {
-  animation: animateSkills80 4s 1 ease-in-out forwards;
+  animation: animateSkills80 4s 1 ease-in-out forwards,slideLeft 4s 1 forwards;
 }
 
 #animateMe:hover
   > #profskills
   > .professionaldiv
+  > .skillgrid
   > .skillname
   > .animateSkills70 {
-  animation: animateSkills70 4s 1 ease-in-out forwards;
+  animation: animateSkills70 4s 1 ease-in-out forwards,slideLeft 4s 1 forwards;
 }
 
 #animateMe:hover
   > #profskills
   > .professionaldiv
+  > .skillgrid
+  > .skillname
+  > .animateSkills90 {
+  animation: animateSkills90 4s 1 ease-in-out forwards,slideLeft 4s 1 forwards;
+}
+
+#animateMe:hover
+  > #profskills
+  > .professionaldiv
+  > .skillgrid
   > .skillname
   > .animateSkills60 {
-  animation: animateSkills60 4s 1 ease-in-out forwards;
+  animation: animateSkills60 4s 1 ease-in-out forwards,slideLeft 4s 1 forwards;
 }
 
 #animateMe:hover
   > #profskills
   > .professionaldiv
+  > .skillgrid
   > .skillname
   > .animateSkills40 {
-  animation: animateSkills40 4s 1 ease-in-out forwards;
+  animation: animateSkills40 4s 1 ease-in-out forwards,slideLeft 4s 1 forwards;
 }
 
 
 
 .bar {
   background-color: var(--bg-color);
-  height: 10px;
-  display: block;
+  height: 20px;
+  display: flex;
+  justify-content: flex-end;
   width: 0px;
   margin-bottom: 10px;
+  font-size: 20px;
+  color: black;
+  opacity: 0;
 }
 
 @keyframes animateSkills80 {
-  from {
+  0% {
     width: 0%;
+    opacity: 0;
+
   }
 
-  to {
+  1% {
+    width: 1%;
+    opacity: 1;
+
+
+  }
+
+  100% {
     width: 80%;
+    opacity: 1;
+
+  }
+}
+
+@keyframes animateSkills90 {
+  0% {
+    width: 0%;
+    opacity: 0;
+
+  }
+
+  1% {
+    width: 1%;
+    opacity: 1;
+
+
+  }
+
+  100% {
+    width: 90%;
+    opacity: 1;
+
   }
 }
 
 @keyframes animateSkills70 {
-  from {
+  0% {
     width: 0%;
+    opacity: 0;
+
   }
 
-  to {
+  1% {
+    width: 1%;
+    opacity: 1;
+
+
+  }
+
+  100% {
     width: 70%;
+    opacity: 1;
+
   }
 }
 
 @keyframes animateSkills60 {
-  from {
+  0% {
     width: 0%;
+    opacity: 0;
+
   }
 
-  to {
+  1% {
+    width: 1%;
+    opacity: 1;
+
+
+  }
+
+  100% {
     width: 60%;
+    opacity: 1;
+
   }
 }
 
 @keyframes animateSkills40 {
-  from {
+  0% {
     width: 0%;
+    opacity: 0;
+
+  }
+
+  1% {
+    width: 1%;
+    opacity: 1;
+
+
+  }
+
+  100% {
+    width: 40%;
+    opacity: 1;
+
+  }
+}
+@keyframes slideLeft {
+  from {
+    left: 0vw;
   }
 
   to {
-    width: 40%;
+    left: 80vw;
   }
 }
+
 
 /* -------------PROFFESIONAL SKILLS-------------- */
 
@@ -373,6 +472,7 @@ h6 {
   background-color: var(--pink);
   padding: 0.5rem;
   color: white;
+  height: 70vh;
 }
 .professionaldiv {
   display: grid;
