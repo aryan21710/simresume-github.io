@@ -169,7 +169,6 @@ h4 {
 #aboutinfo {
   display: grid;
   grid-template-columns: 1.2fr 1fr;
-  border: 1px solid white;
   grid-gap: 10px;
   font-family: "Odibee Sans";
   margin: 2rem 0.8rem 0.8rem 0.8rem;
@@ -332,7 +331,6 @@ h6 {
 
 .uidesign {
   box-shadow: 0px 0px 10px;
-  border: 1px solid white;
   height: auto;
   padding: 50px 30px;
   display: grid;
@@ -401,7 +399,6 @@ h6 {
   grid-gap: 20px;
   padding: 200px 30px;
   box-shadow: 0px 0px 10px;
-  border: 1px solid white;
   margin-bottom: 1.5em;
   background-color: var(--pink);
 
@@ -420,7 +417,6 @@ h6 {
   width: 90vw;
   display: grid;
   grid-template-columns: 1fr 1.5fr;
-  border: 1px solid white;
   margin: 0.7rem;
   box-shadow: 0px 0px 10px;
   font-family: "Comfortaa";
@@ -461,7 +457,6 @@ h6 {
   padding: 0.6rem;
   background-color: var(--pink);
   width: 90vw;
-  border: 1px solid white;
   margin: 0.7rem 0.7rem 0.5rem 0.7rem;
   box-shadow: 0px 0px 10px;
 }

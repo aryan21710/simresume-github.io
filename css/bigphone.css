@@ -16,6 +16,10 @@
 
     }
 
+    .about p{
+      padding: 10px;
+    }
+
     .mandalaImg {
       position: relative;
       top: 0;
@@ -29,7 +33,6 @@
     }
 
     #hire {
-      border: 1px solid red;
       width: 40vw;
     }
 
@@ -64,6 +67,27 @@
       grid-template-columns: 1fr;
       font-family: "Odibee Sans";
      
+    }
+
+    .bar {
+      background-color: var(--bg-color);
+      height: 10px;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .bar80 {
+      width: 80%;
+    }
+
+    .bar70 {
+      width: 70%;
+    }
+    .bar60 {
+      width: 60%;
+    }
+    .bar40 {
+      width: 40%;
     }
 
     #navbar {
@@ -150,18 +174,26 @@
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: auto 1.5fr;
-      border: 1px solid white;
       margin: 0rem;
       box-shadow: 0px 0px 10px;
     }
     #contactinfo {
-      margin: 30px 0px;
+      margin: 0px 0px;
+
+    }
+
+    #contactinfo h3 {
+      background-color: var(--pink);
+      padding: 30px 0px;
+      margin: 0px;
 
     }
     .contactflex {
       width: 100vw;
       margin: 0px;
       padding: 0.4rem;
+      background-color: var(--bg-color);
+
     }
     .name2,
     .email2,
@@ -211,7 +243,6 @@
     .socialMediaIcon {
       width: 30px;
       height: 30px;
-      border: 1px solid red;
     }
     .b1,
     .b2,
@@ -242,6 +273,27 @@
 
     .p1,.b1,.m1 {
       margin-top: 20px;
+    }
+
+    footer {
+      padding: 20px 10px;
+      margin: 0px;
+    }
+
+    footer p {
+      font-size: 0.25rem;
+      color: black
+    }
+
+    
+    .topbutton {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 20vh;
+    }
+    .topbutton button {
+      background-color: var(--pink);
     }
   }
 
