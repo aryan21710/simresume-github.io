@@ -16,8 +16,14 @@
 
     }
 
+    .abouttxt {
+      text-align: justify;
+      margin-top: 15px;
+
+    }
+
     .about p{
-      padding: 10px;
+      padding: 0px;
     }
 
     .mandalaImg {

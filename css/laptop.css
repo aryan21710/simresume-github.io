@@ -192,13 +192,83 @@ h4 {
   line-height: 45px;
 }
 
+.h {
+  animation: increasefontsize 1s infinite ease;
+}
+
+.i {
+  animation: decreasefontsize 1s infinite ease;
+}
+
+.exclamation {
+  display: inline-block;
+  animation: tilt 1s infinite ease;
+}
+
+@keyframes increasefontsize {
+  0% {
+   opacity: 0;
+    color: black;
+  }
+  50% {
+opacity: 0.6;
+    color: var(--bg-color);
+  }
+
+  100% {
+opacity: 1;
+    color: red;
+  }
+}
+
+@keyframes decreasefontsize {
+  0% {
+    opacity: 0;
+    color: black;
+  }
+  50% {
+    opacity: 0.6;
+    color: red;
+  }
+
+  100% {
+    opacity: 1;
+    color: yellow;
+  }
+}
+
+@keyframes tilt {
+  0% {
+    transform: skewY(0deg);
+    color: black;
+
+  }
+  50% {
+    transform: skewY(30deg);
+    color: yellow;
+
+
+  }
+
+  100% {
+    transform: skewY(60deg);
+    color: green;
+
+
+  }
+}
+
+
+
 p {
   font-size: 20px;
   font-family: "Comfortaa";
 }
 .abouttxt {
-  line-height: 30px;
+  line-height: 25px;
   font-family: "Comfortaa";
+  margin-top: 25px;
+  text-align: center;
 }
 h3 {
   color: white;
@@ -489,6 +559,27 @@ footer {
   font-family: "Odibee Sans";
   padding: 0.5rem;
   margin-top: 1rem;
+}
+
+footer {
+  padding: 20px 10px;
+  margin: 0px;
+}
+
+footer p {
+  font-size: 0.25rem;
+  color: black
+}
+
+
+.topbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+.topbutton button {
+  background-color: var(--pink);
 }
 
 .socialMediaIcon:hover {
