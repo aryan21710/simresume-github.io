@@ -295,7 +295,7 @@ h6 {
   > .skillgrid
   > .skillname
   > .animateSkills80 {
-  animation: animateSkills80 4s 1 ease-in-out forwards,slideLeft 4s 1 forwards;
+  animation: animateSkills80 4s 1 ease-in-out forwards,slideLeft 4s 1 ease-in-out forwards;
 }
 
 #animateMe:hover
@@ -304,7 +304,7 @@ h6 {
   > .skillgrid
   > .skillname
   > .animateSkills70 {
-  animation: animateSkills70 4s 1 ease-in-out forwards,slideLeft 4s 1 forwards;
+  animation: animateSkills70 4s 1 ease-in-out forwards,slideLeft 4s 1 ease-in-out forwards;
 }
 
 #animateMe:hover
@@ -313,7 +313,7 @@ h6 {
   > .skillgrid
   > .skillname
   > .animateSkills90 {
-  animation: animateSkills90 4s 1 ease-in-out forwards,slideLeft 4s 1 forwards;
+  animation: animateSkills90 4s 1 ease-in-out forwards,slideLeft 4s 1 ease-in-out forwards;
 }
 
 #animateMe:hover
@@ -322,7 +322,7 @@ h6 {
   > .skillgrid
   > .skillname
   > .animateSkills60 {
-  animation: animateSkills60 4s 1 ease-in-out forwards,slideLeft 4s 1 forwards;
+  animation: animateSkills60 4s 1 ease-in-out forwards,slideLeft 4s 1 ease-in-out forwards;
 }
 
 #animateMe:hover
@@ -331,7 +331,7 @@ h6 {
   > .skillgrid
   > .skillname
   > .animateSkills40 {
-  animation: animateSkills40 4s 1 ease-in-out forwards,slideLeft 4s 1 forwards;
+  animation: animateSkills40 4s 1 ease-in-out forwards,slideLeft 4s 1 ease-in-out forwards;
 }
 
 
@@ -355,8 +355,8 @@ h6 {
 
   }
 
-  1% {
-    width: 1%;
+  30% {
+    width: 30%;
     opacity: 1;
 
 
@@ -376,13 +376,12 @@ h6 {
 
   }
 
-  1% {
-    width: 1%;
+  30% {
+    width: 30%;
     opacity: 1;
 
 
   }
-
   100% {
     width: 90%;
     opacity: 1;
@@ -397,8 +396,8 @@ h6 {
 
   }
 
-  1% {
-    width: 1%;
+  30% {
+    width: 30%;
     opacity: 1;
 
 
@@ -418,8 +417,8 @@ h6 {
 
   }
 
-  1% {
-    width: 1%;
+  30% {
+    width: 30%;
     opacity: 1;
 
 
@@ -439,8 +438,8 @@ h6 {
 
   }
 
-  1% {
-    width: 1%;
+  30% {
+    width: 30%;
     opacity: 1;
 
 
@@ -578,7 +577,8 @@ h6 {
 
 .workexp1,
 .workexp2,
-.workexp3 {
+.workexp3,
+.workexp4 {
   width: 90vw;
   display: grid;
   grid-template-columns: 1fr 1.5fr;
@@ -588,20 +588,40 @@ h6 {
 }
 .exp1,
 .exp2info,
-.exp3 {
+.exp3,
+.exp4info {
   background-color: var(--pink);
   padding: 0.6rem;
-  color: white;
+  color: black;
+  font-size: 20px;
 }
 .exp1info,
 .exp2,
-.exp3info {
+.exp3info,
+.exp4 {
   padding: 0.4rem;
   background-color: white;
 }
 
+.keyrole {
+  font-size: 20px;
+  margin: 10px 0px 0px 20px;
+}
+
+p .companyName {
+  font-size: 24px;
+  font-weight: 900;
+}
+
+p.duration {
+  font-size: 22px;
+  font-weight: 700;
+}
+
 .exp1info p,
-.exp2info p {
+.exp2info p,
+.exp3info p ,
+.exp4info p  {
   font-family: "Comfortaa";
 }
 .logotext {
