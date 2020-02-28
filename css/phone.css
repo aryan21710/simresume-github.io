@@ -39,7 +39,8 @@
   .skillgrid {
     display: grid;
     grid-template-columns: 0.99fr 0.01fr;
-    grid-template-rows: repeat(8, 6vh);
+    grid-template-rows: repeat(14, 6vh);
+    border: 2px solid red;
   }
 
   #hire {
@@ -59,7 +60,7 @@
   }
 
   #profskills {
-    height: 90vh;
+    height: 105vh;
   }
 
   .exp1info,
@@ -367,3 +368,5 @@
     background-color: var(--pink);
   }
 }
+
+

@@ -9,11 +9,21 @@
   --bg-color: rgb(66, 214, 236);
   --pink: rgb(240, 140, 235);
   --hover-color: rgba(240, 140, 235, 0.6);
+  --font-125: 1.25vw;
+  --font-135: 1.35vw;
+  --font-35: 3.5vw;
+  --font-195: 1.95vw;
+  --font-27: 2.7vw;
+  --font-195: 1.95vw;
 }
 
 html {
   background-color: var(--bg-color);
   font-size: 65.2px;
+}
+
+.homeimg {
+  width:  25vw;
 }
 
 body,
@@ -34,16 +44,20 @@ a {
 
 .mandala {
   /* height: auto; */
-  position: relative;
 }
 
 .mandalaImg {
-  position: absolute;
-  top: 0vh;
-  right: 15%;
+  width: 100%;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .mandala img {
+  position: absolute;
+  top: 0vh;
   height: 100vh;
   object-fit: default;
   animation: rotateHomeImg 1200s infinite ease;
@@ -60,24 +74,23 @@ a {
 }
 
 #navbar {
-  padding: 15px;
+  display: block;
+  width: 100%;
   position: absolute;
   z-index: 1000;
-  right: 15%;
 }
 /* ----------- list items menu----------- */
 .menu {
   display: flex;
-  float: right;
   font-family: "Odibee Sans";
   letter-spacing: 2px;
   width: 50vw;
-  justify-content: space-between;
+  position: relative;
 }
 .creative {
   margin-left: 10px;
   width: 90%;
-  font-size: 18px;
+  font-size: var(--font-125);
   border-radius: 10px;
   font-family: "Odibee Sans";
   cursor: pointer;
@@ -90,30 +103,62 @@ a {
 button:hover {
   background-color: var(--pink);
 }
-.menu li {
-  font-size: 18px;
-  border-radius: 10px;
+#about, #skills, #portfolio, #experience, #contact{
+  font-size: var(--font-125);
+  border-radius: 0.75vw;
   font-family: "Odibee Sans";
   cursor: pointer;
   list-style-type: none;
   font-weight: bold;
-  padding: 10px 15px;
   background-color: var(--pink);
-  width: 8vw;
+  width: 10vw;
   height: 4vh;
   text-align: center;
   transition: height 0.7s ease-in-out;
-}
-.menu li:hover {
-  height: 6vh;
+  margin: auto 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0vh;
 }
 
-.menu li:hover > a {
-  color: white;
+#about {
+left: 5vw;
 }
+
+#skills {
+left: 17vw;
+}
+
+#portfolio  {
+  left: 29vw;
+}
+
+#experience  {
+  left: 41vw;
+}
+#contact {
+  left: 53vw;
+}
+
+
+
+#about:hover, #skills:hover, #portfolio:hover, #experience:hover, #contact:hover {
+  height: 6vh;
+
+}
+
+#about:hover > a, #skills:hover > a, #portfolio:hover > a, #experience:hover > a, #contact:hover > a {
+color: white;
+}
+
 
 .menu li a {
   color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
   text-align: center;
 }
@@ -131,12 +176,12 @@ button:hover {
 }
 
 h1 {
-  font-size: 45px;
+  font-size: var(--font-35);
   font-family: "Odibee Sans";
   letter-spacing: 2px;
 }
 h4 {
-  font-size: 25px;
+  font-size: var(--font-195);
   margin-bottom: 2.5vh;
   font-family: "Odibee Sans";
   letter-spacing: 2px;
@@ -145,13 +190,13 @@ h4 {
   margin-bottom: 0vh;
 }
 #hire {
-  width: 25%;
-  padding: 10px;
+  width: 10vw;
+  padding: 10px 15px;
   border: none;
-  border-radius: 8px;
+  border-radius: 0.75vw;
   outline: none;
   background-color: var(--pink);
-  font-size: 20px;
+  font-size: var(--font-125);
   font-weight: bold;
   color: black;
   letter-spacing: 2px;
@@ -262,7 +307,7 @@ opacity: 1;
 
 
 p {
-  font-size: 20px;
+  font-size: var(--font-135);
   font-family: "Comfortaa";
 }
 .abouttxt {
@@ -273,8 +318,8 @@ p {
 }
 h3 {
   color: white;
-  font-size: 35px;
-  margin-bottom: 20px;
+  font-size: var(--font-27);
+  margin-bottom: var(--font-135);
   letter-spacing: 2px;
 }
 h6 {
@@ -338,12 +383,12 @@ h6 {
 
 .bar {
   background-color: var(--bg-color);
-  height: 20px;
+  height: var(--font-135);
   display: flex;
   justify-content: flex-end;
   width: 0px;
   margin-bottom: 10px;
-  font-size: 20px;
+  font-size: var(--font-135);
   color: black;
   opacity: 0;
 }
@@ -560,7 +605,7 @@ h6 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
-  grid-gap: 20px;
+  grid-gap: var(--font-135);
   padding: 200px 30px;
   box-shadow: 0px 0px 10px;
   margin-bottom: 1.5em;
@@ -593,7 +638,7 @@ h6 {
   background-color: var(--pink);
   padding: 0.6rem;
   color: black;
-  font-size: 20px;
+  font-size: var(--font-135);
 }
 .exp1info,
 .exp2,
@@ -604,8 +649,8 @@ h6 {
 }
 
 .keyrole {
-  font-size: 20px;
-  margin: 10px 0px 0px 20px;
+  font-size: var(--font-135);
+  margin: 10px 0px 0px var(--font-135);
 }
 
 p .companyName {
@@ -625,7 +670,7 @@ p.duration {
   font-family: "Comfortaa";
 }
 .logotext {
-  font-size: 25px;
+  font-size: var(--font-195);
 }
 #gdlist {
   list-style-type: circle;
@@ -657,7 +702,7 @@ p.duration {
   justify-content: center;
 }
 button {
-  font-size: 18px;
+  font-size: var(--font-125);
   border-radius: 10px;
   font-family: "Odibee Sans";
   font-weight: bold;
@@ -677,7 +722,7 @@ footer {
 }
 
 footer {
-  padding: 20px 10px;
+  padding: var(--font-135) 10px;
   margin: 0px;
 }
 
