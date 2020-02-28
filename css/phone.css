@@ -64,7 +64,8 @@
 
   .exp1info,
   .exp2info,
-  .exp3info {
+  .exp3info,
+  .exp4info {
     padding: 0.5rem;
     background-color: var(--bg-color);
     color: black;
@@ -72,14 +73,16 @@
 
   .exp1,
   .exp2,
-  .exp3 {
+  .exp3,
+  .exp4 {
     padding: 0.5rem;
     background-color: var(--pink);
   }
 
   .exp1 h4,
   .exp2 h4,
-  .exp3 h4 {
+  .exp3 h4,
+  .exp4 h4 {
     font-size: 0.4rem;
     margin: auto auto;
     width: 100%;
@@ -139,6 +142,25 @@
     animation: rotateHomeImg 1000s infinite ease;
     border-radius: 50%;
   }
+
+  p .companyName {
+    font-size: 20px;
+    font-weight: 900;
+  }
+
+  p.duration {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .keyrole {
+    font-size: 18px;
+    margin: 10px 0px 0px 20px;
+    font-weight: 0;
+    font-family: 'Comfortaa';
+
+  }
+
 
   .age,
   .email,
@@ -206,7 +228,8 @@
   }
   .workexp1,
   .workexp2,
-  .workexp3 {
+  .workexp3,
+  .workexp4 {
     font-family: "Odibee Sans";
     width: 100vw;
     display: grid;
