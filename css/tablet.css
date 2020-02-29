@@ -9,6 +9,15 @@
     
   }  
 
+  html {
+    width: 100vw;
+  }
+
+  body {
+    width: 100vw;
+    padding: 0px;
+  }
+
   .mandala {
     position: relative;
     width: 75vw;
