@@ -1,6 +1,8 @@
 @media only screen and (max-width: 600px) {
   html {
-    width: 100vw;
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
   }
   .mainsection {
     width: 100vw;
